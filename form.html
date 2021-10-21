@@ -1,0 +1,106 @@
+   <!DOCTYPE html>
+    <html lang="pt-br">
+
+   <head>
+     <meta charset="utf-8">
+     <title>primeiro forms html</title>
+    
+     <link rel="stylesheet" herf=./estilo.css>
+  
+
+   </head>
+       <body>
+       <header class="teste">
+       <h1>cadastro de alunos</h1>
+       </header>
+    
+       
+     
+     <article>
+     <form action="./index.html" method="POST">
+     <label for="Bnome">nome da aluna</label>
+     <input type="text" size="25" id="Bnome" required="required"/>
+     <br>
+     <br>
+     <label for="Bnota">idade da aluna</label>
+     <input type="text" size="25" id="Bnota"
+     required="required"/>
+     <br>
+     <br>
+    
+     
+       <h2> ESCOLHA SUA CIDADE</h2>
+      <!--bloco de seleção-->
+      <input type="radio" name="tipo" id="cidade" value="C">
+      <label for="cidade">São Paulo</label> 
+     <br>
+      <input type="radio" name="tipo" id="ma" value="B" required="required">
+      <label for="ma">Maua</label> 
+      <br>
+      <input type="radio" name="tipo" id="san" value="A">
+      <label for="san">Santo Andre</label> 
+     <br>
+     
+      <br>
+    
+      <!--BLOCO DE SELEÇÃO CHECKBOX-->
+      <h3>tipo de moradia</h3>
+      <input type="checkbox" name="tipo" id="bts" value="C">
+      <label for="ap">apartamento</label> 
+    
+      <input type="checkbox" name="tipo" id="Ex" value="B" required="required">
+      <label for="CA"> casa alugada</label> 
+      <input type="checkbox" name="tipo" id="Ma" value="A">
+      <label for="CP">casa propria</label> 
+      <!--Elemento select (lista suspensa)-->
+      <h3>escolha sua comida perferida</h3>
+      <select name="comida" id="comida">
+      <option value ="maça">maça</option>
+      <option value="creme">creme</option>
+      <option value= "sushi">sushi</option>
+      </select>
+       
+
+     <!--Elemento datalist (lista suspensa)-->
+     <h3>País de nascença</h3>
+
+     <input list="browsers" />
+     <datalist id="browsers">
+       <option value="Brasil">
+       <option value="Argentina">
+       <option value="Chile">
+       </option>   
+    </datalist>
+     <!--datalist para escolha e escrita-->
+
+    <fieldset>
+     <h4>Qual ETEC você é aluno?</h4>
+     <input list="browsers" />
+    
+     <datalist id="browsers">
+       <option value="ETEC SAPOPEMBA">
+       <option value="EXTENÇÃO ETEC SAPOPEMBA">
+       <option value="ETEC VILA FORMOSA">
+       
+     </datalist>
+    
+     
+    
+     <!-- Iniciando textarea -->
+      <h3>fale um pouco sobre você, e a escolha do seu curso</h3>
+     <textarea name="critica" id="critica"
+     cols="55" rows="10"></textarea>
+    
+    <input type="submit" value="enviar"/>
+     </form>
+     </article>
+     <footer>
+     <small>copyright <sub>&copy;</sub> todos os direitos reservados</small>
+     </footer>
+     
+    
+     
+  
+    </body>
+
+     </html>
